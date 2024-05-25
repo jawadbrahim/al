@@ -9,7 +9,6 @@ def selection_sort_books(books):
     return books
 books = [("Book a", 50), ("Book j", 30), ("Book e", 40), ("Book z", 20)]
 sorted_books = selection_sort_books(books)
-print("Books sorted by height:")
 for book in sorted_books:
     print("Book: " + book[0] + " Height: " + str(book[1]))
 #O(n^2)
