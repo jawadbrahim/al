@@ -1,4 +1,4 @@
-class AddressBook:
+class HashTable:
     def __init__(self):
         self.contacts = {}
 
@@ -20,12 +20,12 @@ class AddressBook:
             print("Contact", name, "removed successfully")
         else:
             print("Contact", name, "not found")
-address_book = AddressBook()
-address_book.add_contact("ali", "70123456")
-address_book.add_contact("brahim", "71189102")
-address_book.add_contact("jawad", "81201843")
-print("Search for ali:", address_book.search_by_name("ali"))
-print("Search for brahim:", address_book.search_by_name("brahim"))
-print("Search for jawad:", address_book.search_by_name("jawad"))
-print("Search by phone number '70123456':", address_book.search_by_number("70123456"))
-address_book.remove_contact("jawad")
+hashtable = HashTable()
+hashtable.add_contact("ali", "70123456")
+hashtable.add_contact("brahim", "71189102")
+hashtable.add_contact("jawad", "81201843")
+print("Search for ali:", hashtable.search_by_name("ali"))
+print("Search for brahim:", hashtable.search_by_name("brahim"))
+print("Search for jawad:", hashtable.search_by_name("jawad"))
+print("Search by phone number '70123456':", hashtable.search_by_number("70123456"))
+hashtable.remove_contact("jawad")
